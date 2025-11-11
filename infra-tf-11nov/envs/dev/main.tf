@@ -51,7 +51,7 @@ module "eks" {
   source = "../../modules/eks"
 
   cluster_name       = "${var.project}-${var.env}-eks"
-  cluster_version    = "1.30"
+  cluster_version    = "1.32"
   vpc_id             = module.network.vpc_id
   private_subnet_ids = module.network.private_subnet_ids
   public_subnet_ids  = module.network.public_subnet_ids
@@ -60,7 +60,7 @@ module "eks" {
   node_desired_size = 2
   node_min_size     = 1
   node_max_size     = 4
-  instance_types    = ["t3.medium"]
+  instance_types    = ["c7i-flex.large"]
   disk_size         = 30
 
   addon_versions = {
