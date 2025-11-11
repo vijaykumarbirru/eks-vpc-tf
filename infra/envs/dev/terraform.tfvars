@@ -3,7 +3,7 @@ region      = "us-east-1"
 aws_profile = "default"
 
 # Tags
-project = "comerapay"
+project = "dubai"
 env     = "dev"
 
 # AZs (two)
