@@ -1,3 +1,14 @@
 https://github.com/AmanPathak-DevOps/EKS-Terraform-GitHub-Actions/tree/master
 
 refer this github
+
+Free tier eligible instances.
+~ $         aws ec2 describe-instance-types --filters Name=free-tier-eligible,Values=true --query "InstanceTypes[].InstanceType"
+[
+    "c7i-flex.large",
+    "t4g.small",
+    "t4g.micro",
+    "t3.micro",
+    "t3.small",
+    "m7i-flex.large"
+]
